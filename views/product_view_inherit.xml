@@ -8,7 +8,7 @@
         <field name="inherit_id" ref="product.product_template_form_view"/>
         <field name="arch" type="xml">
 
-            <field name="purchase_ok" position="after">
+            <field name="sale_ok" position="before">
                    <field name="visible_for_customer" string="Visible pour le client" />
             </field>
         </field>

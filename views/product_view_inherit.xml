@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="product_template_form_inherited" model="ir.ui.view">
+        <field name="name">product.template.form.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+
+            <field name="sale_ok" position="after">
+                   <field name="visible_for_customer" string="Visible pour le client" help="Si la case est cochee,
+                   ce produit sera visible sur le devis et la facture du client. A l inverse, si la case n est pas
+                   cochee, larticle sera comptabilise dans le montant total de la facture mais ne sera pas visible
+                   dans la liste des articles."/>
+            </field>
+
+    </record>
+</odoo>

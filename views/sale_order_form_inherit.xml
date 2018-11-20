@@ -4,7 +4,7 @@
     <data>
     <record id="sale_order_form_inherited" model="ir.ui.view">
         <field name="name">Sale Order Inherited</field>
-        <field name="model">sale.order</field>
+        <field name="model">account.invoice</field>
         <field name="inherit_id" ref="account.invoice_form"/>
         <field name="arch" type="xml">
 

@@ -2,7 +2,7 @@
 # Copyright 2018 Roland NEYRINCK
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-from odoo import api, models
+from odoo import models, fields, api, exceptions
 
 
 class ProductTemplate(models.Model):

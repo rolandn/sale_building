@@ -6,10 +6,12 @@
         <field name="name">Product Template Form Inherited</field>
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
 
             <field name="sale_ok" position="after">
                    <field name="visible_for_customer" string="Visible pour le client" />
             </field>
+        </field>
     </record>
     </data>
 </odoo>

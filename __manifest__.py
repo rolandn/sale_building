@@ -17,7 +17,7 @@
         'account','sale'
     ],
     "data": [
-        'views/product_view_inherit.xml',
+
 
 
     ],

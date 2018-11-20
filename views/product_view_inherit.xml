@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
+    <data>
     <record id="product_template_form_inherited" model="ir.ui.view">
         <field name="name">Product Template Form Inherited</field>
         <field name="model">product.template</field>
@@ -9,6 +10,6 @@
             <field name="sale_ok" position="after">
                    <field name="visible_for_customer" string="Visible pour le client" />
             </field>
-
     </record>
+    </data>
 </odoo>

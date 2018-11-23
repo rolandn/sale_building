@@ -92,6 +92,7 @@
 
                             <!-- Lines associated -->
                             <t t-foreach="layout_category['lines']" t-as="l">
+                                <t t-if="doc.customer_visble==True"
                                 <tr>
                                     <td><span t-field="l.name"/></td>
                                     <td class="text-right">
@@ -115,6 +116,7 @@
                                     </td>
                                 </tr>
                             </t>
+                        </t>
 
                             <t t-if="(layout_category_size &gt; 1 or page_size &gt; 1) and layout_category['subtotal']" groups="sale.group_sale_layout">
                                 <tr class="text-right">

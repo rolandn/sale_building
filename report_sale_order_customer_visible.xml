@@ -5,8 +5,8 @@
                 string="Devis client"
                 model="sale.order"
                 report_type="qweb-pdf"
-                name="sale_building.sale_order_customer_visible"
-                file="sale_building.sale_order_customer_visible"/>
+                name="sale_building.report_saleorder_document"
+                file="sale_building.report_saleorder_document"/>
 
 
         <template id="report_saleorder_document">

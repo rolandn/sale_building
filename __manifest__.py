@@ -20,6 +20,7 @@
             'views/product_view_inherit.xml',
             'views/sale_order_form_inherit.xml',
             'report_sale_order_customer_visible.xml',
+            'invoice_form_inherited.xml',
     ],
     'installable': True,
 }

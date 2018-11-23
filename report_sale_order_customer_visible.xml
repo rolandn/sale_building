@@ -88,7 +88,7 @@
 
                             <!-- Lines associated -->
                             <t t-foreach="layout_category['lines']" t-as="l">
-                                <t t-foreach="l.customer_visible==True"></t>
+                                <t t-foreach="l.customer_visible==True">
                                 <tr>
                                     <td><span t-field="l.name"/></td>
                                     <td class="text-right">

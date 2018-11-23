@@ -19,6 +19,7 @@
     'data': [
             'views/product_view_inherit.xml',
             'views/sale_order_form_inherit.xml',
+            'report_sale_order_customer_visible.xml',
     ],
     'installable': True,
 }

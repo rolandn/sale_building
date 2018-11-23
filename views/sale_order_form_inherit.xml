@@ -13,7 +13,7 @@
                    </xpath>
 
                     <field name="payment_term_id" position="after">
-                        <field name="comment_for_customer" string="Commentaire pour le client" widget="html"/>
+                     <!--   <field name="comment_for_customer" string="Commentaire pour le client" widget="html"/> -->
                     </field>
 
                 </field>

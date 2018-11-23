@@ -13,10 +13,10 @@
         comptabilise bien le coût de celui-ci même s'il n'est pas affiché.
     """,
     'license': 'AGPL-3',
-    "depends": [
+    'depends': [
         'account','sale'
     ],
-    "data": [
+    'data': [
             'views/product_view_inherit.xml',
             'views/sale_order_form_inherit.xml',
     ],

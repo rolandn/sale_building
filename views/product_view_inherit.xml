@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<odoo>
+
 
         <record id="product_template_form_inherited" model="ir.ui.view">
         <field name="name">Product Template Form Inherited</field>
@@ -14,4 +14,3 @@
         </field>
     </record>
 
-</odoo>

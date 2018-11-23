@@ -12,11 +12,11 @@
                        <field name="customer_visible"/>
                    </xpath>
 
-                    <page name="Order Lines" position="before">
+                    <field name="order_line" position="before">
 
                             <field name="comment_for_customer" string="Commentaire pour le client" widget="html"/>
 
-                    </page>
+                    </field>
 
                 </field>
         </record>

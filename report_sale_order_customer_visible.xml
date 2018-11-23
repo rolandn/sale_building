@@ -71,7 +71,7 @@
                     <thead>
                         <tr>
                             <th>Description</th>
-                            <th class="text-right">Quantity</th>
+                            <th class="text-left">Quantity</th>
 
                         </tr>
                    </thead>
@@ -91,7 +91,7 @@
                                 <t t-if="l.customer_visible==True">
                                 <tr>
                                     <td><span t-field="l.name"/></td>
-                                    <td class="text-right">
+                                    <td class="text-left">
                                         <span t-field="l.product_uom_qty"/>
                                         <span t-field="l.product_uom" groups="product.group_uom"/>
                                     </td>

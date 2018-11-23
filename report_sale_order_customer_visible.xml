@@ -98,9 +98,9 @@
                                         <span t-field="l.product_uom_qty"/>
                                         <span t-field="l.product_uom" groups="product.group_uom"/>
                                     </td>
-                                    <td class="text-right">
+                                 <!--   <td class="text-right">
                                         <span t-field="l.customer_visible"/>
-                                    </td>
+                                    </td>  -->
                                     <td class="text-right">
                                         <span t-field="l.price_unit"/>
                                     </td>

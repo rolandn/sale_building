@@ -54,13 +54,10 @@
                     <p t-field="doc.date_order"/>
                 </div>
                 <div t-if="doc.user_id.name" class="col-xs-3">
-                    <strong>Salesperson:</strong>
+                    <strong>Votre contact :</strong>
                     <p t-field="doc.user_id"/>
                 </div>
-                <div name="payment_term" t-if="doc.payment_term_id" class="col-xs-3">
-                    <strong>Payment Terms:</strong>
-                    <p t-field="doc.payment_term_id"/>
-                </div>
+
             </div>
 
             <!-- Is there a discount on at least one line? -->
@@ -72,8 +69,6 @@
                         <tr>
                             <th>Description</th>
                             <th class="text-left">Quantity</th>
-                            <th>                           </th>
-
                         </tr>
                    </thead>
                    <tbody class="sale_tbody">

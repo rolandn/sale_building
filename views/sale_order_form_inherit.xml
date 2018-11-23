@@ -3,12 +3,12 @@
     <data>
         <record id="sale_order_form_inherited" model="ir.ui.view">
                 <field name="name">Sale Order Form Inherited</field>
-                <field name="model">sale.order</field>
+                <field name="model">sale.order.line</field>
                 <field name="inherit_id" ref="sale.view_order_form"/>
                 <field name="arch" type="xml">
 
-                    <field name="partner_id" position="after">
-                       <field name="visible_for_customer" string="Visible pour le client" />
+                    <field name="product_id" position="after">
+                       <field name="customer_visible" string="Visible pour le client" />
                     </field>
 
                 </field>

@@ -6,6 +6,6 @@ from odoo import models, fields, api, exceptions
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = 'sale.order'
 
     customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur le devis')

@@ -5,18 +5,18 @@
                 <field name="name">Sale Order Form Inherited</field>
                 <field name="model">sale.order</field>
                 <field name="inherit_id" ref="sale.view_order_form"/>
-                <field name="arch" type="xml">
+                <page name="arch" type="xml">
 
 
                     <xpath expr="//tree/field[@name='name']" position="after">
                        <field name="customer_visible"/>
                    </xpath>
 
-                    <field name="payment_term_id" position="after">
-                        <group>
+                    <page name="Order Lines" position="before">
+
                             <field name="comment_for_customer" string="Commentaire pour le client" widget="html"/>
-                        </group>
-                    </field>
+
+                    </page>
 
                 </field>
         </record>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
+    <data>
         <record id="product_template_form_inherited" model="ir.ui.view">
             <field name="name">Product Template Form Inherited</field>
             <field name="model">product.template</field>
@@ -11,5 +12,6 @@
                 </field>
 
             </field>
-    </record>
-</openerp>
+        </record>
+    </data>
+</odoo>

@@ -7,9 +7,14 @@
                 <field name="inherit_id" ref="sale.view_order_form"/>
                 <field name="arch" type="xml">
 
-                   <xpath expr="//tree/field[@name='name']" position="after">
+
+                    <xpath expr="//tree/field[@name='name']" position="after">
                        <field name="customer_visible"/>
                    </xpath>
+
+                    <field name="payment_term_id" position="after">
+                        <field name="comment_for_customer" string="Commentaire pour le client" widget="html"/>
+                    </field>
 
                 </field>
         </record>

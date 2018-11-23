@@ -71,7 +71,8 @@
                     <thead>
                         <tr>
                             <th>Description</th>
-                            <th >Quantity</th>
+                            <th class="text-left">Quantity</th>
+                            <th>                           </th>
 
                         </tr>
                    </thead>

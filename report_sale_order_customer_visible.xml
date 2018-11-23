@@ -13,7 +13,9 @@
 
         <t t-call="report.html_container" >
 
-        <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})"/>
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+
         <div class="page">
             <div class="oe_structure"/>
             <div class="row">
@@ -175,6 +177,7 @@
             <div class="oe_structure"/>
         </div>
 
+        </t>
         </t>
         </template>
 

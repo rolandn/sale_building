@@ -64,6 +64,7 @@
                             <span t-raw="doc.comment_for_customer"/> <br></br>
                             <br></br>
             </div>
+            <p style="page-break-before:always;"> </p>
 
             <!-- Is there a discount on at least one line? -->
             <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>

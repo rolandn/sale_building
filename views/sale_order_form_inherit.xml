@@ -7,7 +7,9 @@
                 <field name="inherit_id" ref="sale.view_order_form"/>
                 <field name="arch" type="xml">
 
-                        <field></field>
+                    <field name="partner_id" position="after">
+                       <field name="visible_for_customer" string="Visible pour le client" />
+                    </field>
 
                 </field>
         </record>

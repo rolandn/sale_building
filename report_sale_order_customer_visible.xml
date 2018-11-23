@@ -11,7 +11,7 @@
 
         <template id="sale_order_customer_visible">
 
-        <t t-name="sale.sale_order_customer_visible">
+
 
         <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})"/>
         <div class="page">
@@ -174,7 +174,7 @@
             </p>
             <div class="oe_structure"/>
         </div>
-    </t>
+
 
         </template>
 

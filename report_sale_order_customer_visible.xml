@@ -61,7 +61,7 @@
             </div>
 
             <div class="row mt32 mb32" id="commentaire">
-                <p t-field="doc.comment_for_customer"/>
+                <span t-field="doc.comment_for_customer"/>
             </div>
 
             <!-- Is there a discount on at least one line? -->

@@ -94,7 +94,7 @@
                             <t t-foreach="layout_category['lines']" t-as="l">
                                 <t t-if="doc.customer_visble==True">
                                 <tr>
-                                    <span t-field="l.name"/>
+                                    <td><span t-field="l.name"/></td>
                                     <td class="text-right">
                                         <span t-field="l.product_uom_qty"/>
                                         <span t-field="l.product_uom" groups="product.group_uom"/>

@@ -15,6 +15,7 @@
         <t t-foreach="docs" t-as="doc">
 
          <t t-lang="doc.partner_id.lang"/>
+            <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})"/>
 
         <div class="page">
             <div class="oe_structure"/>

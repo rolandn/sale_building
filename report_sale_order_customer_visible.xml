@@ -60,6 +60,10 @@
 
             </div>
 
+            <div class="row mt32 mb32" id="commentaire">
+                <p t-field="doc.comment_for_customer"/>
+            </div>
+
             <!-- Is there a discount on at least one line? -->
             <t t-set="display_discount" t-value="any([l.discount for l in doc.order_line])"/>
 

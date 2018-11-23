@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <report id="sale_order_customer_visible_action"
-                string="Devis client"
+                string="Devis Casa Domotic"
                 model="sale.order"
                 report_type="qweb-pdf"
                 name="sale_building.sale_order_customer_visible"
@@ -14,10 +14,8 @@
     <t t-call="report.html_container">
 
         <t t-foreach="docs" t-as="doc">
-            <t t-lang="doc.partner_id.lang"/>
 
-
-            <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})"/>
+            <t t-set="doc"  t-value="o.with_context({'lang':doc.partner_id.lang})" />
 
 
         <div class="page">

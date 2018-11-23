@@ -9,7 +9,7 @@
                 file="sale_building.sale_order_customer_visible"/>
 
 
-        <template id="report_saleorder_document">
+        <template id="sale_order_customer_visible">
 
     <t t-call="report.html_container">
         <t t-foreach="docs" t-as="doc">

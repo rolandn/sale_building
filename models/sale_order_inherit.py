@@ -9,6 +9,11 @@ class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
     customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur le devis')
+
+
+class SaleOrder(models.Model):
+    _inherit = 'sale.order'
+
     comment_for_customer = fields.Char(string="Message pour le client", required=False, track_visibility='onchange')
 
 

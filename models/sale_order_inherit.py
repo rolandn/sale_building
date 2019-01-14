@@ -8,7 +8,7 @@ from odoo import models, fields, api, exceptions
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
-    customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur le devis')
+    customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur le devis', default=True)
 
 
 class SaleOrder(models.Model):
@@ -20,4 +20,4 @@ class SaleOrder(models.Model):
 class AccountInvoiceLine(models.Model):
     _inherit = "account.invoice.line"
 
-    customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur la facture')
+    customer_visible = fields.Boolean(related='product_id.visible_for_customer', string='Visible sur la facture', default=True)

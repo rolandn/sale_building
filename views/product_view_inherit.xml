@@ -11,6 +11,10 @@
                        <field name="visible_for_customer" string="Visible pour le client" />
                 </field>
 
+                <field name="company_id" position="after">
+                       <field name="manufacturer" string="Fabricant" />
+                </field>
+
             </field>
         </record>
     </data>

@@ -8,6 +8,10 @@ from odoo import models, fields, api, exceptions
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
-    visible_for_customer = fields.Boolean(string='Visible pour le client ?', default=True, help='Si la case est cochee, ce produit sera visible sur le devis et la facture du client. A l inverse, si la case n est pas cochee, larticle sera comptabilise dans le montant total de la facture mais ne sera pas visible dans la liste des articles.')
+    visible_for_customer = fields.Boolean(string='Visible pour le client ?',
+                                          default=True,
+                                          help='Si la case est cochee, ce produit sera visible sur le devis et la facture du client. A l inverse, si la case n est pas cochee, larticle sera comptabilise dans le montant total de la facture mais ne sera pas visible dans la liste des articles.')
 
-
+    manufacturer = fields.Many2one('res.partner',
+                                   string="Fabricant",
+                                   help= "Fabricant du matériel. !! Différent du fournisseur !")

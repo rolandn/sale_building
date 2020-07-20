@@ -22,6 +22,7 @@
             'report_sale_order_customer_visible.xml',
             'views/invoice_form_inherited.xml',
             'views/sale_order_search.xml',
+            'views/product_tree.xml',
     ],
     'installable': True,
 }

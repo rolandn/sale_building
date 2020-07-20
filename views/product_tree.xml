@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="SB_Product_tree_view" model="ir.ui.view">
+            <field name="name">SB.Product.tree</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                   <xpath expr="//tree/field[@name='name']" position="after">
+                       <field name="manufacturer"/>
+                   </xpath>
+
+                    <xpath expr="//tree/field[@name='barcode']" position="attributes">
+                       <attribute name="invisible">1</attribute>
+                   </xpath>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="SB_Product_inherit_tree_view" model="ir.ui.view">
+            <field name="name">SB.Product_Inherit.tree</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                   <xpath expr="//tree/field[@name='qty_available']" position="attributes">
+                       <attribute name="invisible">1</attribute>
+                   </xpath>
+
+                   <xpath expr="//tree/field[@name='virtual_available']" position="attributes">
+                       <attribute name="invisible">1</attribute>
+                   </xpath>
+
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

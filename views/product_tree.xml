@@ -5,6 +5,7 @@
         <record id="SB_Product_tree_view" model="ir.ui.view">
             <field name="name">SB.Product.tree</field>
             <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
             <field name="arch" type="xml">
                 <tree>
 
@@ -23,6 +24,7 @@
         <record id="SB_Product_inherit_tree_view" model="ir.ui.view">
             <field name="name">SB.Product_Inherit.tree</field>
             <field name="model">product.product</field>
+            <field name="inherit_id" ref="stock.view_stock_product_tree"/>
             <field name="arch" type="xml">
                 <tree>
 

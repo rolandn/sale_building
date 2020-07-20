@@ -21,6 +21,7 @@
             'views/sale_order_form_inherit.xml',
             'report_sale_order_customer_visible.xml',
             'views/invoice_form_inherited.xml',
+            'views/sale_order_search.xml',
     ],
     'installable': True,
 }

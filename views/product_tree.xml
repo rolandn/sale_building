@@ -7,7 +7,6 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_product_tree_view"/>
             <field name="arch" type="xml">
-                <tree>
 
                    <xpath expr="//tree/field[@name='name']" position="after">
                        <field name="manufacturer"/>
@@ -17,7 +16,6 @@
                        <attribute name="invisible">1</attribute>
                    </xpath>
 
-                </tree>
             </field>
         </record>
 
@@ -26,7 +24,6 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="stock.view_stock_product_tree"/>
             <field name="arch" type="xml">
-                <tree>
 
                    <xpath expr="//tree/field[@name='qty_available']" position="attributes">
                        <attribute name="invisible">1</attribute>
@@ -36,7 +33,6 @@
                        <attribute name="invisible">1</attribute>
                    </xpath>
 
-                </tree>
             </field>
         </record>
 

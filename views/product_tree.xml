@@ -9,7 +9,9 @@
             <field name="arch" type="xml">
 
                    <xpath expr="//tree/field[@name='name']" position="after">
+                       <field name="description_sale"/>
                        <field name="manufacturer"/>
+                       <field name="categ_id"/>
                    </xpath>
 
                     <xpath expr="//tree/field[@name='barcode']" position="attributes">
